@@ -1,0 +1,13 @@
+{
+  "name": "next.js-fullstack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rafaelswitek/next.js-fullstack.git",
+  "author": "Rafael Gonçalves <rafael.goncalves@emitte.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
