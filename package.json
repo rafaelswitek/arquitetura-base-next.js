@@ -2,8 +2,6 @@
   "name": "next.js-fullstack",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:rafaelswitek/next.js-fullstack.git",
-  "author": "Rafael Gonçalves <rafael.goncalves@emitte.com.br>",
   "license": "MIT",
   "scripts": {
     "start": "next start",

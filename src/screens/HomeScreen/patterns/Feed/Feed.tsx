@@ -74,7 +74,7 @@ Feed.Header = () => {
         </Box>
       </Box>
       <Text tag="h1" variant="heading4">
-        Rafael Switek
+        Rafael Gonçalves
       </Text>
       
       {/* <Link href="https://youtube.com/DevSoutinho">

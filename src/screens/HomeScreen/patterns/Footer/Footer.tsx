@@ -19,7 +19,7 @@ export default function Footer() {
       }}
     >
       <Text variant="body2">
-        Feito com ❤️ por Rafael Switek (@rafaelswitek)
+        Feito com ❤️ por Rafael Gonçalves (@rafaelswitek)
       </Text>
     </Box>
   )
