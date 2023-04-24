@@ -1,0 +1,10 @@
+site:
+  title: "Rafael Switek - Timeline"
+  description: "Bem vindo a minha timeline pessoal"
+personal:
+  name: "Rafael Switek"
+  avatar: "https://github.com/rafaelswitek.png"
+  socialNetworks:
+    github: "https://www.github.com/rafaelswitek"
+    twitter: "https://www.twitter.com/rafaelswitek"
+    linkedin: "https://www.linkedin.com/in/rafaelswitek"

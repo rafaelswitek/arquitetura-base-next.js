@@ -6,6 +6,7 @@ import Image from "@src/components/Image/Image";
 import Link from "@src/components/Link/Link";
 import Button from "@src/components/Button/Button";
 import { useTheme } from "@src/theme/ThemeProvider";
+import { useTemplateConfig } from "@src/services/template/TemplateConfigContext";
 
 interface FeedProps {
   children: React.ReactNode;
@@ -31,6 +32,7 @@ export default function Feed({ children }) {
 
 Feed.Header = () => {
   const theme = useTheme();
+  const templateConfig = useTemplateConfig();
 
   return (
     <Box
@@ -54,8 +56,8 @@ Feed.Header = () => {
             height: { xs: '100px', md: '128px' },
             borderRadius: '100%',
           }}
-          src="https://github.com/rafaelswitek.png"
-          alt="Imagem de perfil do Rafael Switek"
+          src={templateConfig?.personal?.avatar}
+          alt={`Imagem de perfil do ${templateConfig?.personal?.name}`}
         />
 
         <Box
@@ -63,26 +65,42 @@ Feed.Header = () => {
             justifyContent: 'space-between',
           }}
         >
-          <Box styleSheet={{flex: 1, justifyContent: 'space-between', display: {xs: 'none', md: 'flex'}}}>
+          <Box styleSheet={{ flex: 1, justifyContent: 'space-between', display: { xs: 'none', md: 'flex' } }}>
             <Button fullWidth colorVariant="primary" size="xl" href="/">Newsletter</Button>
-            <Button fullWidth colorVariant="neutral" size="xl"  href="/">Buy me a coffee</Button>
+            <Button fullWidth colorVariant="neutral" size="xl" href="/">Buy me a coffee</Button>
           </Box>
-          <Box styleSheet={{flex: 1, justifyContent: 'space-between', display: {xs: 'flex', md: 'none'}}}>
+          <Box styleSheet={{ flex: 1, justifyContent: 'space-between', display: { xs: 'flex', md: 'none' } }}>
             <Button fullWidth colorVariant="primary" size="xs" href="/">Newsletter</Button>
-            <Button fullWidth colorVariant="neutral" size="xs"  href="/">Buy me a coffee</Button>
+            <Button fullWidth colorVariant="neutral" size="xs" href="/">Buy me a coffee</Button>
           </Box>
         </Box>
       </Box>
       <Text tag="h1" variant="heading4">
-        Rafael Gonçalves
+        {templateConfig?.personal?.name}
       </Text>
-      
-      {/* <Link href="https://youtube.com/DevSoutinho">
-        <Icon name="youtube" />
-      </Link>
-      <Icon name="twitter" />
-      <Icon name="instagram" />
-      <Icon name="github" /> */}
+
+      <Box
+        styleSheet={{
+          flexDirection: "row",
+          gap: "4px",
+        }}
+      >
+        {Object.keys(templateConfig.personal.socialNetworks).map(key => {
+          const socialNetwork = templateConfig.personal.socialNetworks[key];
+          if (socialNetwork) {
+            return (
+              <Link
+                key={key}
+                target="_blank"
+                href={templateConfig.personal.socialNetworks[key]}
+              >
+                <Icon name={key as any} />
+              </Link>
+            )
+          }
+          return null;
+        })}
+      </Box>
     </Box>
   )
 }
