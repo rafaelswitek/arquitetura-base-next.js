@@ -20,3 +20,4 @@ Projeto realizado durante os cursos da Alura [Next.js Full stack: arquitetura de
 * Criar uma base de componentes para a aplicação
 * Entender como estruturar os componentes do projeto e separar o visual feito pela equipe de design do código
 * Implementar uma aplicação do zero no Next.js utilizando Typescript e styled-components
+* Utilizar a lib skynexui para lidar com breakpoints na aplicação
