@@ -8,7 +8,7 @@ Projeto realizado durante os cursos da Alura
 | -------------  | --- |
 | :sparkles: Nome        | **Arquitetura Base**
 | :label: Tecnologias | Next.JS, TypeScript, styled-components
-| :rocket: URL         | http://localhost:3000
+| :rocket: URL         | https://rafaelswitek.vercel.app/
 
 ## Detalhes do projeto
 ## Instalação e Configuração
