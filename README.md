@@ -8,7 +8,7 @@ Projeto realizado durante os cursos da Alura
 | -------------  | --- |
 | :sparkles: Nome        | **Arquitetura Base**
 | :label: Tecnologias | Next.JS, TypeScript, styled-components
-| :rocket: URL         | https://newsletter-six-pied.vercel.app/
+| :rocket: URL         | https://newsletter-rafaelswitek.vercel.app/
 
 ## Detalhes do projeto
 ## Instalação e Configuração
