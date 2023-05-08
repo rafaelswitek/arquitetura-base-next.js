@@ -1,4 +1,4 @@
-# Arquitetura base de Componentes Front End
+# Newsletter
 
 Projeto realizado durante os cursos da Alura, na formação [Performe sua aplicação React com Next.js Full stack](https://cursos.alura.com.br/formacao-react-nextjs-fullstack)
 * [Next.js Full stack: arquitetura de componentes Front-end](https://cursos.alura.com.br/course/nextjs-fullstack-arquitetura-componentes-front-end)
