@@ -7,7 +7,7 @@ Projeto realizado durante os cursos da Alura, na formação [Performe sua aplica
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
-| :sparkles: Nome        | **Arquitetura Base**
+| :sparkles: Nome        | **Newsletter**
 | :label: Tecnologias | Next.JS, TypeScript, styled-components, Supabase
 | :rocket: URL         | https://newsletter-rafaelswitek.vercel.app/
 
